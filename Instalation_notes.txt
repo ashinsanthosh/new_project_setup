@@ -1,0 +1,44 @@
+Steps
+______
+
+
+1) npm install --save-dev amd-optimize
+2) npm install --save-dev connect
+3) npm install connect-livereload --save-dev
+4) npm install --save-dev gulp
+5) npm install --save-dev gulp-autoprefixer   -  install ["gulp-autoprefixer": "^2.0.0",]
+6) npm install --save-dev gulp-cache
+7) npm install --save-dev gulp-changed
+8) npm install --save-dev gulp-concat
+9) npm install --save-dev gulp-declare
+10) npm install --save-dev gulp-handlebars
+11) npm install --save-dev gulp-if
+12) npm install --save-dev gulp-imagemin
+13) npm install gulp-jshint --save-dev
+14) npm install --save-dev gulp-livereload
+15) npm install --save-dev gulp-load-plugins
+16) npm install --save-dev gulp-minify-css
+17) npm install --save-dev gulp-notify
+18) npm install --save-dev gulp-requirejs
+19) npm install gulp-sass --save-dev
+20) npm install --save-dev gulp-size
+21) npm install --save-dev gulp-uglify
+22) npm install --save-dev gulp-util
+23) npm install --save-dev gulp-watch
+24) npm install --save-dev gulp-wrap
+25) npm install --save-dev jshint-stylish
+26) npm install --save-dev opn
+27) npm install --save-dev serve-index
+28) npm install --save-dev serve-static
+29) npm install --save-dev yargs
+
+__________
+
+Project name needs change on below files
+
+gulpfile.js
+app.js
+dev.js
+
+pro_name='project_name';
+
