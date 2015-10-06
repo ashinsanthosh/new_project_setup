@@ -1,0 +1,30 @@
+// Grid Layout Large (Tablet)
+@import'../config/tablet';
+@import"../grid";
+
+@media (min-width: 751px) and (max-width: 959px) {
+    .hide-mobile {
+        display: block;
+    }
+    .hide-desktop {
+        display: block;
+    }
+    .hide-tablet {
+        display: none !important;
+    }
+    .wrapper {
+        header, footer, section {
+            article {
+                @include column(8);
+                float: left;
+                width: 64%;
+            }
+            aside {
+                @include column(4);
+                float: right;
+                width: 30.9%;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+// Grid Layout Large (Desktop)
+@import'../config/desktop';
+@import"../grid";
+
+@media (min-width: 960px) {
+    .hide-mobile {
+        display: block !important;
+    }
+    .hide-table {
+        display: block !important;
+    }
+    .hide-desktop {
+        display: none !important;
+    }
+    .wrapper {
+        aside {
+            @include column(4);
+            float: right;
+            margin: 0;
+            width: 31.9%;
+        }
+        &.aside {
+            @include column(4);
+        }
+    }
+}

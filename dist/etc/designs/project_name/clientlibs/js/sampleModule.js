@@ -1,0 +1,1 @@
+var snqs=window.snqs||{};snqs.SampleModule=function(n,s,u){"use strict";var r,t,e=null;return t=function(){return e},r=function(){return t()},{init:r}}(this,jQuery,"snqs"),jQuery(snqs.SampleModule.init());

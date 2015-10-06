@@ -1,0 +1,1 @@
+var snqs=window.snqs||{};snqs.SampleModule=function(n,s,r){"use strict";var t,u,e=null;return u=function(){return e},t=function(){return alert("hai"),u()},{init:t}}(this,jQuery,"snqs"),jQuery(snqs.SampleModule.init());

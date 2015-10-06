@@ -1,0 +1,192 @@
+//*---------------------------------------
+//  Font Size || Rem Sizing w PX fallback
+
+    @mixin font-size($size) {
+        //Base font size defined in vars
+        $remSize: ($size / ($size * 0 + 1)) / $baseFontSize;
+        font-size: $size;
+        font-size: #{$remSize}rem;
+    }
+
+//*---------------------------------------
+//  Font face Src || Define path once, Use in font-face defintion
+
+    @mixin fontfaceSrc($filepath, $woff2: true) {
+        @if $woff2 == true {
+            src:font-url('#{$filepath}.eot'); /* IE9 Compat Modes */
+            src:font-url('#{$filepath}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                font-url('#{$filepath}.woff2') format('woff2'), /* Modern Browsers */
+                font-url('#{$filepath}.woff') format('woff'), /* Modern Browsers */
+                font-url('#{$filepath}.ttf') format('truetype'); /* Best visually rendered font */
+        }
+
+        @else {
+            src:font-url('#{$filepath}.eot'); /* IE9 Compat Modes */
+            src:font-url('#{$filepath}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                font-url('#{$filepath}.woff') format('woff'), /* Modern Browsers */
+                font-url('#{$filepath}.ttf') format('truetype'); /* Best visually rendered font */
+        }
+    }
+
+//*---------------------------------------
+//  Placeholder
+
+    @mixin placeholder() {
+        &::-webkit-input-placeholder {
+            line-height: normal;
+            color: $searchInputText;
+            font:{
+                family: $headingFont;
+                weight: 300;
+                style:italic;
+            }
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            line-height: normal;
+            color: $searchInputText;
+            font:{
+                family: $headingFont;
+                weight: 300;
+                style:italic;
+            }
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            line-height: normal;
+            color: $searchInputText;
+            font:{
+                family: $headingFont;
+                weight: 300;
+                style:italic;
+            }
+        }
+        &:-ms-input-placeholder {
+            line-height: normal;
+            color: $searchInputText;
+            font:{
+                family: $headingFont;
+                weight: 300;
+                style:italic;
+            }
+        }
+    }
+
+//*---------------------------------------
+//  Arrows
+
+    @mixin arrow($direction, $color: #ffffff, $sideA: 5px, $sideB: 5px, $sideC: 5px) {
+        width: 0;
+        height: 0;
+        @if $direction == up {
+            border-left: $sideA solid transparent;
+            border-right: $sideB solid transparent;
+            border-bottom: $sideC solid $color;
+        } @else if $direction == down {
+            border-left: $sideA solid transparent;
+            border-right: $sideB solid transparent;
+            border-top: $sideC solid $color;
+        } @else if $direction == right {
+            border-top: $sideA solid transparent;
+            border-bottom: $sideB solid transparent;
+            border-left: $sideC solid $color;
+        } @else {
+            border-top: $sideA solid transparent;
+            border-bottom: $sideB solid transparent;
+            border-right: $sideC solid $color;
+        }
+    }
+
+//*---------------------------------------
+//  Image Top
+
+    @mixin image-top {
+        @include column(6);
+        border-top: none;
+        position: relative;
+        padding: 0 0 31px;
+
+        a.cta-link {
+            @include font-size(14px);
+            text-decoration: none;
+            font-family: Lato;
+            font-weight: 600;
+        }
+        img {
+            @include column(12);
+            margin: 0 0 20px 0;
+            width: 100%;
+            float: none;
+        }
+    }
+
+//*---------------------------------------
+//  Page Intro Common
+
+    @mixin page-intro-common($layout:small) {
+        @if $layout == large{
+            h1{
+                @include font-size(30px);
+                padding: 0;
+                line-height: 35px;
+                color: $darkGrey;
+            }
+            a.cta-btn{
+                margin: 0;
+            }
+            p{
+                padding: 10px 0 30px 0;
+            }
+            img {
+                margin-bottom: 0px;
+                &.withcaption {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        @else {
+
+            width: 100%;
+            margin: 0 auto 25px;
+            padding: 0 0 20px;
+            h1{
+                padding: 20px 0 0 10px;
+                line-height: 26px;
+            }
+            p{
+                padding: 10px 0;
+                font-size: 13px;
+                line-height: 21px;
+            }
+            a{
+                margin:10px 0;
+                padding: 11px 16px;
+            }
+            .hero-image-panel{
+                width: 66%;
+            }
+        }
+    }
+
+//*---------------------------------------
+//  Accordion Toggle
+
+    @mixin accordionToggle($width, $height, $color) {
+        width: $width;
+        height: $height;
+        background-color: $color;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            border: 2px solid white;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            margin-left: -25%;
+            margin-top: -1px;
+        }
+    }

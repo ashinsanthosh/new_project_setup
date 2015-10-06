@@ -1,0 +1,20 @@
+//Set Unicode
+@charset "UTF-8";
+
+//Fontface Sources
+@import
+    'fonts/lato',
+    //'fonts/opensans',
+    'fonts/calibri',
+    'fonts/fontello-icons';
+
+//Typography styles
+@import 'default';
+
+@media (min-width: 751px) and (max-width:959px) {
+    @import "medium"
+}
+
+@media (min-width:960px){
+    @import "large"
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../../fonts/fontello.eot?96532566');
+    src: url('../../fonts/fontello.eot?96532566#iefix') format('embedded-opentype'),
+    url('../../fonts/fontello.woff?96532566') format('woff'),
+    url('../../fonts/fontello.ttf?96532566') format('truetype'), url('../../fonts/fontello.svg?96532566#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'fontello';
+src: url('../../fonts/fontello.svg?96532566#fontello') format('svg');
+}
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    /*width: 1em; -- Commented for left alignment in Related links*/
+    /*margin-right: .2em; -- Commented for left alignment in Related links */
+
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+
+    line-height: 1.3em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    /*margin-left: .2em; -- Commented for left alignment in Related links*/
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+
+.icon-down-arrow:before { content: '\e800'; } /* '' */
+.icon-youtube:before { content: '\e801'; } /* '' */
+.icon-video:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e803'; } /* '' */
+.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-globe:before { content: '\e805'; } /* '' */
+.icon-plus-circle:before { content: '\e806'; } /* '' */
+.icon-right-arrow:before { content: '\e807'; } /* '' */
+.icon-clinical-trials:before { content: '\e808'; } /* '' */
+.icon-align-left:before { content: '\e809'; } /* '' */
+.icon-search:before { content: '\e80a'; } /* '' */
+.icon-right-open-mini:before { content: '\e80b'; } /* '' */
+.icon-minus-circle:before { content: '\e80c'; } /* '' */
+.icon-link:before { content: '\e80d'; } /* '' */
+.icon-sec:before { content: '\e80e'; } /* '' */
+.icon-heart:before { content: '\e80f'; } /* '' */
+.icon-webcast:before { content: '\e810'; } /* '' */
+.icon-up-arrow:before { content: '\e811'; } /* '' */
+.icon-awards:before { content: '\e812'; } /* '' */
+.icon-events:before { content: '\e813'; } /* '' */
+.icon-image-gallery:before { content: '\e814'; } /* '' */
+.icon-media-kit:before { content: '\e815'; } /* '' */
+.icon-manual-library:before { content: '\e816'; } /* '' */
+.icon-pdf:before { content: '\e817'; } /* '' */
+.icon-phone:before { content: '\e818'; } /* '' */
+.icon-press-release-1:before { content: '\e819'; } /* '' */
+.icon-close:before { content: '\e81a'; } /* '' */
+.icon-ed-training:before { content: '\e81b'; } /* '' */
+.icon-product-performance:before { content: '\e81c'; } /* '' */
+.icon-about:before { content: '\e81d'; } /* '' */
+.icon-faq:before { content: '\e81d'; } /* '' */
+.icon-linkedin:before { content: '\e81e'; } /* '' */
+.icon-shopping-cart:before { content: '\e81f'; } /* '' */
+.icon-wrench:before { content: '\e820'; } /* '' */
+.icon-media-kits:before { content: '\e821'; } /* '' */
+.icon-media-contacts:before { content: '\e822'; } /* '' */
+.icon-print:before { content: '\e823'; } /* '' */
+.icon-arrow-right:before { content: '\e824'; } /* '' */
+.icon-envelope:before { content: '\e825'; } /* '' */
+.icon-circle-facebook:before { content: '\e826'; } /* '' */
+.icon-circle-linkedin:before { content: '\e827'; } /* '' */
+.icon-circle-twitter:before { content: '\e828'; } /* '' */
+.icon-circle-youtube:before { content: '\e829'; } /* '' */
+.icon-facebook-comment:before { content: '\e82a'; } /* '' */
+.icon-facebook-like:before { content: '\e82b'; } /* '' */
+.icon-facebook-share:before { content: '\e82c'; } /* '' */
+.icon-twitter-favorite:before { content: '\e82d'; } /* '' */
+.icon-twitter-reply:before { content: '\e82e'; } /* '' */
+.icon-twitter-retweet:before { content: '\e82f'; } /* '' */
+.icon-play-btn:before { content: '\e830'; } /* '' */
+.icon-ellipsis:before { content: '\e831'; } /* '' */
+.icon-menu:before { content: '\e832'; } /* '' */
+.icon-angle-up:before { content: '\e833'; } /* '' */
+.icon-angle-down:before { content: '\e834'; } /* '' */
+.icon-id-card:before { content: '\e822'; } /* '' */
+.icon-weibo:before { content: '\e835'; } /* '' */

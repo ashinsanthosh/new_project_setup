@@ -1,0 +1,121 @@
+body {
+    font:{
+        family: $bodyFont;
+        weight: 400;
+        size: 100%;
+    }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering:optimizeLegibility;
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+input:focus {
+    outline: none;
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a, :visited{
+    outline: 0;
+    outline: none;
+}
+:hover, :active, :focus{
+    outline: 0;
+    outline: none;
+}
+p{
+    line-height:1.8;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6,
+.button, button,
+.cta-button,
+.cta-link,
+.cta {
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+//This should really be normalized,
+//Didn't have time to do proper definitions.
+h1 {
+    @include font-size(34px);
+}
+
+h2 {
+    @include font-size(20px);
+}
+
+h3 {
+    @include font-size(22px);
+}
+
+h4{
+    @include font-size(20px);
+}
+
+h6{
+    @include font-size(20px);
+}
+
+h5 {
+    @include font-size(20px);
+    position: relative;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    i {
+        position: absolute;
+        right: 10px;
+        top: 26px;
+        font-size:37px;
+    }
+
+    &.divider {
+        border-top: 0px;
+    }
+}
+
+//Header Specific
+header{
+    font:{
+        family: 'Lato';
+        weight: 400;
+    }
+
+    input[type="search"]{
+        font-style: italic;
+    }
+}
+.ja_jp {
+    header{
+        font-family: 'MS PGothic', 'MS Gothic', osaka, Arial, Helvetica, sans-serif !important;
+        font-weight: 400;
+
+    }
+    body {
+        font-family: 'MS PGothic', 'MS Gothic', osaka, Arial, Helvetica, sans-serif !important;
+    }
+
+    .related-links-wrapper{
+        ul{
+            li{
+                span{
+                    font-family: 'MS PGothic', 'MS Gothic', osaka, Arial, Helvetica, sans-serif !important;
+                }
+            } 
+        } 
+    }
+
+    .bredcrumb li, .bredcrumb li a{
+        font-family: 'MS PGothic', 'MS Gothic', osaka, Arial, Helvetica, sans-serif !important;
+    } 
+
+}
+//Helpers
+.uppercase{
+    text-transform: uppercase;
+}

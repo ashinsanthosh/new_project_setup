@@ -1,0 +1,22 @@
+h3{
+    @include font-size(14px);
+}
+
+h3 {
+    @include font-size(17px);
+}
+
+h4{
+    @include font-size(11px);
+}
+
+//Why is this global?
+h5 {
+    @include font-size(17px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h6{
+    @include font-size(13px);
+}

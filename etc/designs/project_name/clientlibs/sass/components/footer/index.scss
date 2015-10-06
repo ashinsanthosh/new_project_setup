@@ -1,0 +1,13 @@
+@import 'default';
+
+@media (max-width:750px){
+    @import "small"
+}
+
+@media (min-width:751px){
+    @import "large"
+}
+
+@media (min-width: 751px) and (max-width:959px) {
+    @import "medium"
+}
